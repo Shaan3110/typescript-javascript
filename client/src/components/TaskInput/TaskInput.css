@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+.taskinput{
+    width: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    flex-direction: column;
+    border-radius: 20px;
+}
+
+.taskinput input {
+    width: 80%;
+    border: 2px solid #02198B;
+    color: #02198B;
+    font-family: 'Roboto Slab', serif;
+    padding: 10px 10px;
+    margin: 30px 0px;
+}
+.taskinput input::placeholder {
+    color: #02198B;
+}
+.taskinput textarea {
+    width: 80%;
+    border: 2px solid #02198B;
+    color: #02198B;
+    font-family: 'Roboto Slab', serif;
+    resize: none;
+    height: 30%;
+    padding: 10px 10px;
+}
+.taskinput input::placeholder {
+    color: #02198B;
+}
