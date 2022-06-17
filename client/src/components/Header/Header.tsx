@@ -1,8 +1,11 @@
 import React from 'react'
+import './Header.css'
 
 const Header = () => {
   return (
-    <div>Header</div>
+    <nav>
+      <h1>Todo List</h1>
+    </nav>
   )
 }
 

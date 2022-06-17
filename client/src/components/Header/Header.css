@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+nav{
+    display: flex;
+    padding: 10px 30px;
+}
+nav h1{
+    font-family: 'Roboto Slab', serif;
+    color: white;
+    font-size: 34px;
+}
