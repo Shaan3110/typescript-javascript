@@ -1,5 +1,5 @@
 import axios          from "axios";
-import { TaskList, Tasks } from "../../models/Task";
+import { TaskList, Tasks } from "../../models/ITask";
 import { token } from "../../utils/authController";
 
 const baseUrl = "http://localhost:5000";

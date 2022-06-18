@@ -25,9 +25,7 @@ router.get("/gettasks", async (req, res) => {
 
 //add tasks from client
 router.post("/addtasks", async (req, res) => {
-  console.log("inside2")
   try {
-      console.log("inside1")
       Tasks.push(req.body);
       return res.status(200).send("Successfully added the task");
   } catch (error) {

@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { postTasks } from "../../apis/Tasks/Task";
-import { TasksProps } from "../../models/Task";
+import { TasksProps } from "../../models/ITask";
 import "./TaskInput.css";
 
 export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {

@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Header from '../../components/Header/Header'
 import TaskInput from '../../components/TaskInput/TaskInput'
 import Tasks from '../../components/Tasks/Tasks'
-import { TaskList } from '../../models/Task'
+import { TaskList } from '../../models/ITask'
 import './Home.css'
 
 const Home = () => {
