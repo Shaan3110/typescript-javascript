@@ -7,13 +7,13 @@ export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
   //states
   const [callapi, setcallapi] = useState<Boolean>(false);
   const [sendd, setsendd] = useState<Boolean>(false);
-  const [content, setcontent] = useState<String>("");
-  const [title, settitle] = useState<String>("");
+  const [content, setcontent] = useState<string>("");
+  const [title, settitle] = useState<string>("");
 
   //api-call
   useEffect(() => {
     const senddata = () => {
-      postTasks()
+      postTasks({id:d?.length!+1, title: title, content: content})
         .then((res) => {
           if (res === 200) {
             let updatedata: Array<Object> | undefined = d;
@@ -22,7 +22,9 @@ export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
               title: title,
               content: content,
             });
-            changed(updatedata);
+            changed([]);
+            changed(updatedata)
+            console.log(updatedata)
           }
         })
         .catch((error) => {

@@ -1,5 +1,5 @@
 import axios          from "axios";
-import { TaskList } from "../../models/Task";
+import { TaskList, Tasks } from "../../models/Task";
 import { token } from "../../utils/authController";
 
 const baseUrl = "http://localhost:5000";
@@ -17,10 +17,10 @@ export const getTasks = async () => {
 };
 
 //add tasks
-export const postTasks = async () => {
+export const postTasks = async (data:Tasks) => {
     try {
-        const response = await axios.get(
-            baseUrl + '/tasks/addtasks', { headers: { 'Authorization': `bearer ${token}`, } });
+        const response = await axios.post(
+            baseUrl + '/tasks/addtasks', data, { headers: { 'Authorization': `bearer ${token}`, } });
         return response.status as number;
     } catch (e) {
         console.log(e);

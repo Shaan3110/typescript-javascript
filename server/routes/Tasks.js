@@ -21,17 +21,16 @@ router.get("/gettasks", async (req, res) => {
     });
   }
 });
+
+
 //add tasks from client
 router.post("/addtasks", async (req, res) => {
+  console.log("inside2")
   try {
-    if (req.body.task) {
-      tasks.push_back(req.body.task);
+      console.log("inside1")
+      Tasks.push(req.body);
       return res.status(200).send("Successfully added the task");
-    } else {
-      throw "error";
-    }
   } catch (error) {
-    console.log(error.message);
     res.status(500).json({
       errors: [
         {
