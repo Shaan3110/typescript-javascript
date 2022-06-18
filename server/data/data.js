@@ -1,4 +1,4 @@
-const tasks = [
+const Tasks = [
     {
         id: 1,
         title: "title1",
@@ -21,4 +21,4 @@ const tasks = [
     }
 ]
 
-module.exports= tasks;
+module.exports= Tasks;

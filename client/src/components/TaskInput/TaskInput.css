@@ -9,7 +9,11 @@
     flex-direction: column;
     border-radius: 20px;
 }
-
+.taskinput h1{
+    color: #02198B;
+    font-size: 34px;
+    font-family: 'Roboto Slab', serif;
+}
 .taskinput input {
     width: 80%;
     border: 2px solid #02198B;
@@ -17,6 +21,7 @@
     font-family: 'Roboto Slab', serif;
     padding: 10px 10px;
     margin: 30px 0px;
+    border-radius: 10px;
 }
 .taskinput input::placeholder {
     color: #02198B;
@@ -29,7 +34,37 @@
     resize: none;
     height: 30%;
     padding: 10px 10px;
+    border-radius: 10px;
 }
 .taskinput input::placeholder {
     color: #02198B;
+}
+.add {
+    min-width: 10vw;
+    color: white;
+    background-color: #02198B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+.add:hover {
+    min-width: 10vw;
+    color: #02198B;
+    border: 2px solid #02198B;
+    background-color: white;
+}
+.add button{
+    padding: 10px 10px;
+    border: none;
+    background-color: transparent;
+    color: inherit;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 800;
+    cursor: pointer;
+}
+.add button:hover{
+    color: inherit;
 }

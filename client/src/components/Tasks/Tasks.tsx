@@ -1,14 +1,42 @@
-import React from 'react'
-import './Tasks.css'
-const Tasks = () => {
+import React, { useEffect, useState } from "react";
+import { getTasks } from "../../apis/Tasks/Task";
+import { TaskList, TasksProps } from "../../models/Task";
+import "./Tasks.css";
+
+export const Tasks: React.FC<TasksProps> = ({d,changed}: TasksProps) => {
+
+  //states
+  const [callapi, setcallapi] = useState(false)
+
+  //api-call
+  useEffect(() => {
+    const receivedata = () => {
+      getTasks().then((res)=> {
+        changed(res)
+      }).catch((error)=> {
+        console.log(error)
+      })
+    };
+  
+    receivedata();
+  }, [callapi]);
+
   return (
     <div className="tasks">
-      <div className="task">
-          <h1>Title</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem culpa magni accusamus ab doloremque rem, sunt iusto soluta vitae cum? Vel sapiente maxime at corporis explicabo tempora libero. Aliquid atque harum ea.</p>
-      </div>
-    </div>
-  )
-}
+      
+        {
+          d?.map((ele)=> {
 
-export default Tasks
+            return <div className="task" key={ele.id}>
+            <h1>{ele.title}</h1>
+            <p>
+              {ele.content}
+            </p>
+            </div>
+          })
+        }
+    </div>
+  );
+};
+
+export default Tasks;
