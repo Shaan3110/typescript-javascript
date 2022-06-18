@@ -6,7 +6,7 @@ import "./Tasks.css";
 export const Tasks: React.FC<TasksProps> = ({d,changed}: TasksProps) => {
 
   //states
-  const [callapi, setcallapi] = useState(false)
+  const [callapi, setcallapi] = useState<Boolean>(false)
 
   //api-call
   useEffect(() => {
