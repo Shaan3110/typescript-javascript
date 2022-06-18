@@ -7,6 +7,10 @@ export const Tasks: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
   //states
   const [callapi, setcallapi] = useState<Boolean>(false);
 
+  console.log("Tasks")
+  console.log(d)
+
+
   //api-call
   useEffect(() => {
     const receivedata = () => {

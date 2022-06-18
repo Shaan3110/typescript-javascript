@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { postTasks } from "../../apis/Tasks/Task";
 import { TasksProps } from "../../models/ITask";
+import Home from "../../pages/Home/Home";
 import "./TaskInput.css";
 
 export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
@@ -9,6 +10,9 @@ export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
   const [sendd, setsendd] = useState<Boolean>(false);
   const [content, setcontent] = useState<string>("");
   const [title, settitle] = useState<string>("");
+
+  console.log("TaskInput")
+  console.log(d)
 
   //api-call
   useEffect(() => {
@@ -22,9 +26,8 @@ export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
               title: title,
               content: content,
             });
-            changed([]);
-            changed(updatedata)
             console.log(updatedata)
+            changed(updatedata);
           }
         })
         .catch((error) => {
@@ -35,6 +38,7 @@ export const TaskInput: React.FC<TasksProps> = ({ d, changed }: TasksProps) => {
     if(sendd)
     {
       senddata();
+      changed([]);
     }
   }, [callapi]);
 
