@@ -4,7 +4,7 @@
 
 Hello amazing developer 👋,
 
-Here's the project that I referred to my [blog](https://dev.to/suchintan/javascript-to-typescript-complete-guide-with-react-1nd8)
+Here's the project that I referred on my [blog](https://dev.to/suchintan/javascript-to-typescript-complete-guide-with-react-1nd8)
 
 This is a small Todo-List project which was made to help you understand , how you can change a project from **JavaScript** to **TypeScript**.
 
