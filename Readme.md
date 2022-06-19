@@ -22,3 +22,25 @@ Here's the step you have to follow to start the project -
 4. Use `npm install` and then `node app.js` to start the express server.
 5. You frontend will be running on `localhost:3000` and backend on `localhost:5000`.
 
+## What's there on the repository
+
+As through the blog I explained a lot of syntaxes and a whole project. You will find a folder with all the `syntaxes` , a `client` side with the react app with typescript and at last `server` side for the express server on which we are making the calls.
+
+## Stacks of the project
+
+**Frontend**:
+*<br>*
+1. **React**
+2. **TypeScript**
+3. **Axios**
+*<br>*
+**Backend**:
+*<br>*
+1. **Node**
+2. **Express**
+
+## Thank You
+
+If you find the repository helpful then don't forget to **star** ⭐ the repository. It's really appretiated.
+
+Thank you !
