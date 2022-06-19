@@ -29,13 +29,14 @@ As through the blog I explained a lot of syntaxes and a whole project. You will 
 ## Stacks of the project
 
 **Frontend**:
-*<br>*
 1. **React**
 2. **TypeScript**
 3. **Axios**
-*<br>*
+
+<br>
+
+
 **Backend**:
-*<br>*
 1. **Node**
 2. **Express**
 
